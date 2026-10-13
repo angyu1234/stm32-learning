@@ -1,0 +1,73 @@
+# ============================================================
+# STM32 / 嵌入式工程专用 .gitignore
+# 原则：排除所有编译产物与 IDE 缓存，但保留 .ioc 配置与源码
+# ============================================================
+
+# ---------- STM32CubeIDE ----------
+Debug/
+Release/
+build/
+.settings/
+.mxproject
+*.launch
+*.cproject.bak
+
+# ---------- Keil MDK ----------
+Objects/
+Listings/
+*.uvguix.*
+*.uvoptx.bak
+*.scvd
+*.crf
+*.dep
+*.lnp
+*.bak
+*.htm
+
+# ---------- IAR ----------
+Debug/Exe/
+*_dep/
+*.ewt
+*.ewd
+
+# ---------- 编译产物 ----------
+*.o
+*.d
+*.su
+*.elf
+*.bin
+*.hex
+*.map
+*.axf
+*.lst
+*.i
+*.s.tmp
+
+# ---------- 明确保留：CubeMX 配置文件（这是工程的核心，绝不能忽略） ----------
+!*.ioc
+!*.ld
+!*.s
+
+# ---------- 临时文件 ----------
+*.tmp
+*.swp
+*~
+*.log
+
+# ---------- 操作系统 / 编辑器 ----------
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# ---------- 视频（体积过大，用网盘 / B 站存，链接写进 videos/README.md） ----------
+videos/*.mp4
+videos/*.avi
+videos/*.mov
+videos/*.mkv
+!videos/README.md
+
+# ---------- 个人笔记草稿 ----------
+notes/_draft/
+*.private.md
