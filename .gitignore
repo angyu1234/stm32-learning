@@ -62,11 +62,25 @@ desktop.ini
 .idea/
 
 # ---------- 视频（体积过大，用网盘 / B 站存，链接写进 videos/README.md） ----------
-videos/*.mp4
-videos/*.avi
-videos/*.mov
-videos/*.mkv
+videos/**/*.mp4
+videos/**/*.avi
+videos/**/*.mov
+videos/**/*.mkv
 !videos/README.md
+
+# ---------- 素材库：照片与视频体积大，本地保存，只把图和 CSV 数据进 Git ----------
+assets/照片/*
+assets/视频/*
+!assets/照片/.gitkeep
+!assets/视频/.gitkeep
+assets/**/*.mp4
+assets/**/*.mov
+assets/**/*.avi
+assets/**/*.jpg
+assets/**/*.jpeg
+assets/**/*.png
+!assets/图/**/*.png
+!assets/图/**/*.svg
 
 # ---------- 个人笔记草稿 ----------
 notes/_draft/
